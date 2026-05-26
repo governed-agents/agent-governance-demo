@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=82.0.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-governance"
+version = "0.1.0"
+description = "Runtime safety primitives for AI agent systems"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.11"
+authors = [{name = "Reuben Bowlby"}]
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=9.0.3",
+  "pytest-cov>=7.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/governed-agents/agent-governance-demo"
+Repository = "https://github.com/governed-agents/agent-governance-demo"
+Issues = "https://github.com/governed-agents/agent-governance-demo/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
